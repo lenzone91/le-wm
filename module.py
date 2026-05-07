@@ -193,6 +193,7 @@ class Embedder(nn.Module):
         smoothed_dim=10,
         emb_dim=10,
         mlp_scale=4,
+        _target_=None
     ):
         super().__init__()
         self.patch_embed = nn.Conv1d(input_dim, smoothed_dim, kernel_size=1, stride=1)
@@ -257,6 +258,7 @@ class ARPredictor(nn.Module):
         dim_head=64,
         dropout=0.0,
         emb_dropout=0.0,
+        _target_=None
     ):
         super().__init__()
         self.pos_embedding = nn.Parameter(torch.randn(1, num_frames, input_dim))
