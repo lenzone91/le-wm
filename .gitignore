@@ -1,0 +1,7 @@
+outputs/
+__pycache__/
+lewm-tworooms/
+envi*.json
+requi*.txt
+wandb/
+.vscode/
